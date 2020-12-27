@@ -1,0 +1,16 @@
+{
+  "name": "halyard-fancontrol",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure fancontrol service for servers",
+  "source": "https://github.com/halyard/puppet-fancontrol",
+  "project_page": "https://github.com/halyard/puppet-fancontrol",
+  "issues_url": "https://github.com/halyard/puppet-fancontrol/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ]
+}
