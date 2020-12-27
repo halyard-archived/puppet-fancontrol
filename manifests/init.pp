@@ -29,4 +29,9 @@ class fancontrol (
     ensure  => file,
     content => $fancontrol_config
   }
+
+  -> service { 'fancontrol':
+    ensure => running,
+    enable => true
+  }
 }
