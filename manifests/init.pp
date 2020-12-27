@@ -27,7 +27,8 @@ class fancontrol (
 
   -> file { '/etc/fancontrol':
     ensure  => file,
-    content => $fancontrol_config
+    content => $fancontrol_config,
+    notify  => Service['fancontrol']
   }
 
   -> service { 'fancontrol':
