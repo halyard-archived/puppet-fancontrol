@@ -26,7 +26,7 @@ class fancontrol (
   }
 
   -> file { '/etc/fancontrol':
-    ensure =>  file,
+    ensure  => file,
     content => $fancontrol_config
   }
 }
