@@ -20,7 +20,7 @@ class fancontrol (
   }
 
   -> service { 'lm_sensors':
-    ensure  => running,
-    enabled => true
+    ensure => running,
+    enable => true
   }
 }
