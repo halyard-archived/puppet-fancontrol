@@ -10,6 +10,7 @@
 #
 
 class fancontrol (
+  String $fancontrol_config,
   Array[String] $modules = ['coretemp', 'jc42', 'w83627ehf', 'w83795']
 ) {
   package { 'lm_sensors': }
@@ -22,5 +23,10 @@ class fancontrol (
   -> service { 'lm_sensors':
     ensure => running,
     enable => true
+  }
+
+  -> file { '/etc/fancontrol':
+    ensure =>  file,
+    content => $fancontrol_config
   }
 }
